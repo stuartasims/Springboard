@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Machine Learning Model Classifier With Flask
+		</div>
+        <h2>Classifying the sex of a Monarch Butterfly, danaus plexippus</h2>
+		
+	</div>
+	</header>
+
+	<div class="ml-container">
+
+		<form action="{{ url_for('predict')}}" method="POST">
+        <p>Enter reflectance at the 12 features as a comma-separated string.:677.1, 749.1, 1902, 858, 1058, 395.6, 1407.4, 1232.4, 382.4, 338.9, 361.5, 351 (nm)</p>
+        <p>Ex: 1.341, 2.51, 1.102, 3.2, 4.353, 2.11,...</p>
+
+		<!-- <input type="text" name="comment"/> -->
+		<textarea name="scan" rows="10" cols="30"></textarea>
+		<br/>
+
+		<input type="submit" class="btn-info" value="predict">
+		
+	</form>
+		
+	</div>
+
+	
+	
+
+</body>
+</html>

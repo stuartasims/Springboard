@@ -1,0 +1,5 @@
+﻿Card: Assessing Ideas/data to identify capstone project
+Definition of done:
+-The Study system / Sector / Area of interest is identified
+-A concrete question with actionable changes upon the results is identified within the study system
+-A dataset of sufficient size for the type of question posed in which the question can be answered is identified
