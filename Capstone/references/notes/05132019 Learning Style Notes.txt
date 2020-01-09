@@ -1,0 +1,29 @@
+﻿Stuarts Workstyle:
+
+Learning Description:
+
+	Visual + interactive learner. I learn best when I have a study problem / case study to apply conceptual knowledge to.
+	This seems to make the concepts more memorable later and solidifies the knowledge a bit better for me.
+	I like to take a concept, try applying it, and then try to understand the results in the context of the study system.
+		Example: I tried taking an article on sentiment analysis in python and replicating it on a much smaller dataset of program participant feedback from families from my work. I noticed that the accuracy of the model didn't change regardlessof how heavy I emphasized the regularization parameter (was like 93-94% every time) across the range of its values. I'm guessing it was because only ~5% of the feedback belonged to a negative sentiment class and it was just predicting positive sentiment for every test case but i'm not sure. Being able to look at cases like that and talk about the steps/outputs/decision points is helpful. Perhaps that's a product of having less of a theoretical background which may need some strengthening.
+
+Reinforcement / feedback giving :
+	
+	I generally prefer positively-framed reinforcement / feedback, especially when I can take tease apart my understanding of the problem and learn from that. I become stubborn with very negative feedback sometimes. 
+
+	Example: I once used mean without removing outliers on a duration field and there was a huge outlier that skewed that result to look higher than the data was indicating.
+
+		Preferred discussion: "Why choose mean for this field instead of median or another representation of this data? What would you check for in these to make sure you have the correct interpretation?"
+		Also good: "I see that the distribution of mean values has some very high values, how did you handle those" or "it looks like the mean is skewed by some extreme values here. Can you check on that?"
+		Not preferred feedback: "Stupid mistake: You used mean on this duration field but didn't even check for outliers in the values? I can't believe you did that"
+
+
+As a mentor, you can:
+-Ask me why I made one decision vs another at key points in a process (did it depend on the system, is it a generally good practice, do I not know and was just following an exercise?) and help me understand the effects of those decisions
+-Provide regular feedback on projects/code/ideas/results (linking to articles, examples, or resources is always helpful as well so you don't have to rewrite a ton of material)
+-Try not to crush my (amateur, but excited) curiousity to explore the world through data with overwhelmingly negative feedback :)
+
+
+
+
+
