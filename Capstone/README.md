@@ -44,7 +44,7 @@ The dataset certainly fits the large p, small n area with 96 complete rows and 9
 
 The reflectance "curves" or more simply, line plots across the spectrum of reflectance, show an interesting story.
 
-![Monarch Reflectance Curves]('(references/notes/blog_reflectance_curves_all.JPG')
+![Monarch Reflectance Curves](references/notes/blog_reflectance_curves_all.JPG)
 
 Visible coloration between 400 and 700nm exhibits comparatively low reflectance values compared to the UV (here, 342-397nm). Additionally, the mean values for male and female specimens are much closer in value throughout the visible spectrum than in infrared areas. Males tend to reflect more light in these areas up until ~ 1350nm where females reflect more light than males from ~1350-2500nm.
 
@@ -53,7 +53,7 @@ Visible coloration between 400 and 700nm exhibits comparatively low reflectance 
 
 Three areas of light in the "Green", "Blue", and  "Red" portions of light were used to test for signficiant sexual dimorphism. Before approahcing testing in these areas, I tested for normality in a looped fashion using scipy.stats. Most of the features could be categorized as normal (977 did not fail the test for normality while 17 did).
 
-![Scipy Stats Normal Test Results]('(references/notes/normal_test.JPG')
+![Scipy Stats Normal Test Results](references/notes/normal_test.JPG)
 
 Using independent samples t tests, at an alpha: 0.01, there was significant evidence to support:
 
