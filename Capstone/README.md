@@ -91,7 +91,7 @@ Inspecting the feature importances from the classifier (purity based) showed a n
 
 To tackle multicollinearity, I generated an array of spearman correlation coefficients to inspect for multicollinearity and visualized it as a heatmap.
 
-![Correlation Coefficient Heatmap](references/notes/blog_spearman_r_heatmap.jpg). Clearly, it was an issue to tackle given high correlation coefficients across hundreds of features.
+![Correlation Coefficient Heatmap](references/notes/blog_spearman_r_heatmap.JPG). Clearly, it was an issue to tackle given high correlation coefficients across hundreds of features.
 
 Hierarchical clustering segmented the feature space into only 12 groups at a threshold of 20.
 ![Hierarchical Clustering of Feature Correlation Coefficients](references/notes/hierarchical_clustering_features.JPG).
