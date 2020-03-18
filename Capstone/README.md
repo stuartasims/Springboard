@@ -44,7 +44,7 @@ The dataset certainly fits the large p, small n area with 96 complete rows and 9
 
 The reflectance "curves" or more simply, line plots across the spectrum of reflectance, show an interesting story.
 
-![Monarch Reflectance Curves]('https://github.com/stuartasims/Springboard/blob/master/Capstone/references/notes/blog_reflectance_curves_all.JPG')
+![Monarch Reflectance Curves]('(references/notes/blog_reflectance_curves_all.JPG')
 
 Visible coloration between 400 and 700nm exhibits comparatively low reflectance values compared to the UV (here, 342-397nm). Additionally, the mean values for male and female specimens are much closer in value throughout the visible spectrum than in infrared areas. Males tend to reflect more light in these areas up until ~ 1350nm where females reflect more light than males from ~1350-2500nm.
 
@@ -53,7 +53,7 @@ Visible coloration between 400 and 700nm exhibits comparatively low reflectance 
 
 Three areas of light in the "Green", "Blue", and  "Red" portions of light were used to test for signficiant sexual dimorphism. Before approahcing testing in these areas, I tested for normality in a looped fashion using scipy.stats. Most of the features could be categorized as normal (977 did not fail the test for normality while 17 did).
 
-![Scipy Stats Normal Test Results]('https://github.com/stuartasims/Springboard/blob/master/Capstone/references/notes/normal_test.JPG')
+![Scipy Stats Normal Test Results]('(references/notes/normal_test.JPG')
 
 Using independent samples t tests, at an alpha: 0.01, there was significant evidence to support:
 
@@ -72,7 +72,7 @@ Two primary questions emerged as I began modeling:
 
 I started by using PCA to decompose the feature space into three features based on the elbow plot (though I used cumulative explained variance instead of individual contributing explanations, so my "elbow" is just raised in the air instead.
 
-![PCA Elbow Plot]('https://github.com/stuartasims/Springboard/blob/master/Capstone/references/notes/pca_variance_explained.JPG')
+![PCA Elbow Plot](references/notes/pca_variance_explained.JPG)
 
 From there, I used plotly to visualize the labels across this three-dimensional, reduced feature space in an interactive way.
 PCA worked quite well, with 94% of variance explained by these three components alone.
@@ -91,10 +91,10 @@ Inspecting the feature importances from the classifier (purity based) showed a n
 
 To tackle multicollinearity, I generated an array of spearman correlation coefficients to inspect for multicollinearity and visualized it as a heatmap.
 
-![Correlation Coefficient Heatmap]('https://github.com/stuartasims/Springboard/blob/master/Capstone/references/notes/blog_spearman_r_heatmap.JPG'). Clearly, it was an issue to tackle given high correlation coefficients across hundreds of features.
+![Correlation Coefficient Heatmap](references/notes/blog_spearman_r_heatmap.jpg). Clearly, it was an issue to tackle given high correlation coefficients across hundreds of features.
 
 Hierarchical clustering segmented the feature space into only 12 groups at a threshold of 20.
-![Hierarchical Clustering of Feature Correlation Coefficients]('https://github.com/stuartasims/Springboard/blob/master/Capstone/references/notes/hierarchical_clustering_features.JPG').
+![Hierarchical Clustering of Feature Correlation Coefficients](references/notes/hierarchical_clustering_features.JPG).
 
 Retraining the model showed improvements to 75.9% accuracy and an F1 score of 0.72 for Males and 0.79 for females. 
 
@@ -104,7 +104,7 @@ Ultimately, features in the red wavelengths held the highest importance. NIR and
 #### Visualization of Model
 
 LIME helped in checking the decision making of the classifier. It allows checking a classifier's decision points and inspects the likelihood of the classification given the features and their relative contributions to the predicted label. I would highly recommend it for that "gut checking" step in interpreting model results from supervised learning.
-![LIME: Locally Interpretable Model-Agnostic Explanations]('https://github.com/stuartasims/Springboard/blob/master/Capstone/references/notes/lime_results.JPG').
+![LIME: Locally Interpretable Model-Agnostic Explanations](references/notes/lime_results.JPG)
 
 
 ## Future Questions
